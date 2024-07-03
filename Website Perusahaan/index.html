@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="nav-left">
+        <img src="images/logo.png" alt="Logo" class="logo">
+      </div>
+      <div class="nav-right">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Our Profile</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Message Us</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h1>Hi <span id="userName">Dea</span>, Welcome To Website</h1>
+      <p>Ini adalah website latihan pertama</p>
+    </section>
+    <section>
+      <h2>Our Headquarter</h2>
+      <div class="headquarters">
+        <div class="location">
+          <div class="circle"></div>
+          <p>Jakarta</p>
+        </div>
+        <div class="location">
+          <div class="circle"></div>
+          <p>Bandung</p>
+        </div>
+        <div class="location">
+          <div class="circle"></div>
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Message Us</h2>
+      <div class="message-container">
+        <form id="messageForm">
+          <label for="name">Nama</label>
+          <input type="text" id="name" name="name">
+          <label for="dob">Tanggal Lahir</label>
+          <input type="date" id="dob" name="dob">
+          <label for="gender">Jenis Kelamin</label>
+          <label for="male">Laki-Laki</label>
+          <input type="radio" id="male" name="gender" value="Laki-Laki">
+          <label for="female">Perempuan</label>
+          <input type="radio" id="female" name="gender" value="Perempuan">
+          <label for="message">Pesan</label>
+          <textarea id="message" name="message"></textarea>
+          <button type="submit">Submit</button>
+        </form>
+        <div class="message-results">
+          <p>Nama: <span id="resultName"></span></p>
+          <p>Tanggal Lahir: <span id="resultDob"></span></p>
+          <p>Jenis Kelamin: <span id="resultGender"></span></p>
+          <p>Pesan: <span id="resultMessage"></span></p>
+      </div>      
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Created by Dea</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
